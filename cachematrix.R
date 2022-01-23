@@ -5,6 +5,14 @@
 ## The matrix and it's inverse can be accessed/manipulated  through the 4 subfunctions 
 ## which will be inherited onto the matrix that is created with this function.
 
+
+## When the cacheSolve function is called, it checks whether a previous result is stored
+## in the makeCacheMatrix object (if not, or a new matrix has been created with the
+## function, the inv variable is NULL. If there is a cached answer, it will return this
+## else it will calculate the inverse matrix using the solve function and the result is
+## stored in makeCacheMatrix using the setInv function
+
+
 ## When the cacheSolve function is called, it checks whether a previous result is stored
 ## in the makeCacheMatrix object (if not, or a new matrix has been created with the
 ## function, the inv variable is NULL. If there is a cached answer, it will return this
