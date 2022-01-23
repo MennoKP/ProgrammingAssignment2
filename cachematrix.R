@@ -5,21 +5,13 @@
 ## The matrix and it's inverse can be accessed/manipulated  through the 4 subfunctions 
 ## which will be inherited onto the matrix that is created with this function.
 
-
 ## When the cacheSolve function is called, it checks whether a previous result is stored
 ## in the makeCacheMatrix object (if not, or a new matrix has been created with the
 ## function, the inv variable is NULL. If there is a cached answer, it will return this
 ## else it will calculate the inverse matrix using the solve function and the result is
 ## stored in makeCacheMatrix using the setInv function
 
-
-## When the cacheSolve function is called, it checks whether a previous result is stored
-## in the makeCacheMatrix object (if not, or a new matrix has been created with the
-## function, the inv variable is NULL. If there is a cached answer, it will return this
-## else it will calculate the inverse matrix using the solve function and the result is
-## stored in makeCacheMatrix using the setInv function
-
-
+## Function description
 ## When the makeCacheMatrix function is called to create a matrix, it calls the 
 ## set function automatically and put value 'NULL' in the inv object to indicate 
 ## that no caching is possible. Because of the list statement at the end, the 4 
@@ -41,8 +33,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-
-## For cacheSolveirst the inv value is sked from the subfunction of makeCacheMatrix
+## Function Description
+## For cacheSolve, first the inv value is sked from the subfunction of makeCacheMatrix
 ## If there is a value stored yet (value not 'NULL') then is give the stored
 ## value of inv back.
 ## Otherwise it gets the matric data through the get subfunction, calculates the
